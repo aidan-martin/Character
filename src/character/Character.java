@@ -5,17 +5,20 @@
  */
 package character;
 
+import environment.ApplicationStarter;
+
+
 /**
  *
  * @author aidanmartin
  */
 public class Character {
-
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+    ApplicationStarter.run("Mareep", new CharacterEnvironment());
     }
     
 }
