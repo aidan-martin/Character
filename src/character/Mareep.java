@@ -7,6 +7,7 @@ package character;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 /**
  *
@@ -14,10 +15,29 @@ import java.awt.Graphics;
  */
 public class Mareep {
     
-    Color CREAM = Color.WHITE;
-    Color BROWN = Color.YELLOW;
+    Color CREAM = new Color(250, 241, 210);
+    Color SHADOW = new Color(212, 202, 169);
+    
+//    Graphics2D g2d = (Graphics 2D) graphics;
+//    g2d.rotate(Math.toRadians(45));
+//    g2d.fillOval(x + (widht * 10 / 100), y + (height * 20 / 100), width / 2, height / 2);
+//    g2d.rotate(Math.toRadians(-45));
+//    
+//    graphics.setColor(Color.BLACK);
+    
+    
     
     public void draw(Graphics graphics){
+    
+    //    tilted eye
+        
+//    Graphics2D g2d = (Graphics2D) graphics;
+//    g2d.rotate(Math.toRadians(45));
+//    g2d.fillOval(x + 150, y - 200, width / 2, height / 2);
+//    g2d.rotate(Math.toRadians(-45));
+//    
+//    graphics.setColor(Color.BLACK);
+//    graphics.fillOval(x + (width * 10 / 100), y + (height * 20 / 100), width / 2, height / 2);
         
 //        int[] xS = new int[3];
 //        xS[0] = x + (width / 2);
@@ -35,10 +55,8 @@ public class Mareep {
         graphics.drawRect(x, y, width, height);
         
         //fluffy bits
-
-        
-        
-        graphics.setColor(BROWN);
+      
+        graphics.setColor(SHADOW);
         graphics.fillOval(x, y + (height * 55 / 100), width * 10 / 100, height * 10 / 100);
 
         graphics.setColor(CREAM);
@@ -47,12 +65,15 @@ public class Mareep {
         graphics.fillOval(x + (width * 20 / 100), y + (height * 25 / 100), width * 20 / 100, height * 20 / 100);
         graphics.fillOval(x + (width * 15 / 100), y + (height * 45 / 100), width * 20 / 100, height * 20 / 100);
         
+        //eyes
         
+        graphics.setColor(Color.black);
+        graphics.fillOval(x + (width * 60 / 100), y + (height * 30 / 100), (width * 5 / 100), (height * 5 / 100));
         
-//        graphics.setColor(Color.black);
-//        graphics.fillOval(500, 200, 21, 21);
-//        graphics.fillOval(440, 198, 14, 21);
-//        graphics.setColor(Color.white);
+        graphics.fillOval(x + (width * 45 / 100), y + (height * 28 / 100) , (width * 3 / 100), (height * 5 / 100));
+        graphics.setColor(Color.white);
+        graphics.fillOval(x + (width * 60 / 100), y + (height * 30 / 100), (width * 3 / 100), (height * 3 / 100));
+        graphics.fillOval(x + (width * 45 / 100), y + (height * 28 / 100), (width * 2 / 100), (height * 2 / 100));
 //        graphics.fillOval(502, 202, 9, 9);
 //        graphics.fillOval(444, 199, 7, 9);
 //        
@@ -64,8 +85,7 @@ public class Mareep {
 //        graphics.fillOval(310, 103, 14, 14);
 //        graphics.setColor(new Color(255, 255, 255, 99));
 //        graphics.fillOval(303, 120, 6, 8);
-//        
-//        graphics.drawArc(x, y, width, height, height, height);
+        
         
         
     }
@@ -81,5 +101,8 @@ public class Mareep {
     private int y;
     private int height;
     private int width;
+
     
-}
+    }
+    
+

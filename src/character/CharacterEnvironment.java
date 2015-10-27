@@ -56,7 +56,7 @@ class CharacterEnvironment extends Environment {
         }
         
         if (mareepImage != null) {
-            graphics.drawImage(mareepImage, 500, 100, 200, 200, this);
+            graphics.drawImage(mareepImage, 600, 100, 200, 200, this);
         }
         
     }
