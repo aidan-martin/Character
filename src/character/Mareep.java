@@ -51,32 +51,42 @@ public class Mareep {
 //        
 //        graphics.fillPolygon(xS, yS, 3);
         
-        graphics.setColor(Color.RED);
+        graphics.setColor(Color.BLACK);
         graphics.drawRect(x, y, width, height);
         
         //fluffy bits
       
         graphics.setColor(SHADOW);
         graphics.fillOval(x, y + (height * 55 / 100), width * 10 / 100, height * 10 / 100);
+        graphics.fillOval(x + (width * 5 / 100), y + (height * 58 / 100), width * 15 / 100, height * 15 /100);
+        graphics.fillOval(x + (width * 8 / 100), y + (height * 55 / 100), width * 15 /100, height * 15 /100);
+        graphics.fillOval(x + (width * 13 / 100), y + (height * 56 / 100), width * 20 / 100, height * 20 / 100);
 
         graphics.setColor(CREAM);
         graphics.fillOval(x, y + (height * 40 / 100), width * 20 / 100, height * 20 / 100);
         graphics.fillOval(x + (width * 10 / 100), y + (height * 30 / 100), width * 20 / 100, height * 20 / 100);
         graphics.fillOval(x + (width * 20 / 100), y + (height * 25 / 100), width * 20 / 100, height * 20 / 100);
-        graphics.fillOval(x + (width * 15 / 100), y + (height * 45 / 100), width * 20 / 100, height * 20 / 100);
+        graphics.fillOval(x + (width * 15 / 100), y + (height * 40 / 100), width * 20 / 100, height * 20 / 100);
+        
+        // outlines
+        graphics.setColor(Color.BLACK);
+        graphics.drawArc(x, y + (height * 40 / 100), width * 20 / 100, height * 20 / 100, 80, 180);
+        graphics.drawArc(x, y + (height * 55 / 100), width * 10 / 100, height * 10 / 100, 120, 130);
+//        graphics.drawa
         
         //eyes
         
         graphics.setColor(Color.black);
         graphics.fillOval(x + (width * 60 / 100), y + (height * 30 / 100), (width * 5 / 100), (height * 5 / 100));
-        
         graphics.fillOval(x + (width * 45 / 100), y + (height * 28 / 100) , (width * 3 / 100), (height * 5 / 100));
         graphics.setColor(Color.white);
-        graphics.fillOval(x + (width * 60 / 100), y + (height * 30 / 100), (width * 3 / 100), (height * 3 / 100));
-        graphics.fillOval(x + (width * 45 / 100), y + (height * 28 / 100), (width * 2 / 100), (height * 2 / 100));
+        graphics.fillOval(x + (width * 608 / 1000), y + (height * 30 / 100), (width * 26 / 1000), (height * 26 / 1000));
+        graphics.fillOval(x + (width * 455 / 1000), y + (height * 283 / 1000), (width * 2 / 100), (height * 2 / 100));
 //        graphics.fillOval(502, 202, 9, 9);
 //        graphics.fillOval(444, 199, 7, 9);
 //        
+        //tail
+        
 //        graphics.setColor(new Color(237, 161, 55));
 //        graphics.fillOval(300, 100, 47, 48);
 //        graphics.setColor(new Color(0, 0, 0, 50));
